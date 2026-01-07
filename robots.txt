@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap Location (Best Practice for SEO)
+
+Sitemap: http://karnav-the-developer.infinityfreeapp.com/sitemap.xml

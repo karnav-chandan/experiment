@@ -4,46 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PWA: Matches browser color to your dark theme -->
     <meta name="theme-color" content="#0b0f14">
 
     <title>Karnav Chandan | Experimental SEO & Entity Documentation</title>
 
-    <meta name="description"
-        content="Experimental SEO and entity documentation website by Karnav Chandan. Web Developer & SEO Engineer specializing in systems, Google Maps behavior, and search visibility.">
-    <!-- ADDED: Keywords Meta Tag (For completeness) -->
-    <meta name="keywords" content="Karnav Chandan, Karnav the Developer, Web Developer Nawada, SEO Engineer in nawada, Google Maps SEO, Entity Documentation, IT Head Yusra Mall, Shoprite Retail SEO, Shoprite Retail web Developer , Technical SEO, Web Development Bihar, Experimental SEO">
-    <meta name="robots" content="index, follow">
-    <!-- UPDATED CANONICAL URL -->
-    <link rel="canonical" href="https://karnav-the-developer.vercel.app/">
+    <meta name="description" content="Experimental SEO and entity documentation website by Karnav Chandan. Web Developer & SEO Engineer specializing in systems, Google Maps behavior, and search visibility.">
+    
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="Karnav Chandan, Karnav the Developer, Web Developer Nawada, SEO Engineer, Google Maps SEO, Entity Documentation, IT Head Yusra Mall, Shoprite Retail SEO, Technical SEO, Web Development Bihar, Experimental SEO">
 
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO: Canonical URL (Vercel) -->
+    <link rel="canonical" href="https://karnav-the-developer.vercel.app/">
+    
     <!-- ===== FAVICONS (7 Standard Paths - Root Directory) ===== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Brand Image Used in Overlay -->
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <!-- PWA MANIFEST LINK -->
     <link rel="manifest" href="site.webmanifest">
 
     <!-- ===== OPEN GRAPH (Social Media SEO) ===== -->
     <meta property="og:type" content="website">
-    <!-- UPDATED OG URL -->
     <meta property="og:url" content="https://karnav-the-developer.vercel.app/">
     <meta property="og:title" content="Karnav Chandan | Web Developer & SEO Engineer">
-    <meta property="og:description"
-        content="Experimental SEO and entity documentation website. Exploring systems, Maps behavior, and search visibility.">
-    <!-- UPDATED OG IMAGE URL to image.jpg -->
-    <meta property="og:image" content="https://karnav-the-developer.vercel.app/assets/image.jpg">
+    <meta property="og:description" content="Experimental SEO and entity documentation website. Exploring systems, Maps behavior, and search visibility.">
+    <meta property="og:image" content="https://karnav-the-developer.vercel.app/assets/pfp.jpg">
 
     <!-- ===== TWITTER CARD ===== -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Karnav Chandan | Experimental SEO">
-    <meta name="twitter:description"
-        content="Web Developer & SEO Engineer. Documenting experiments in search visibility and web entities.">
-    <!-- UPDATED TWITTER IMAGE URL to image.jpg -->
-    <meta name="twitter:image" content="https://karnav-the-developer.vercel.app/assets/image.jpg">
+    <meta name="twitter:description" content="Web Developer & SEO Engineer. Documenting experiments in search visibility and web entities.">
+    <meta name="twitter:image" content="https://karnav-the-developer.vercel.app/assets/pfp.jpg">
 
-    <!-- ===== ENTITY SCHEMA (UPDATED URLs) ===== -->
+    <!-- ===== ENTITY SCHEMA ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,9 +54,13 @@
       "jobTitle": "Web Developer",
       "url": "https://karnav-the-developer.vercel.app/",
       "sameAs": [
-        "https://sites.google.com/view/karnav-chandan/home/",
-        "https://sites.google.com/view/karnav-the-developer/",
-        "https://karnav-chandan.github.io/home/"
+        "https://www.linkedin.com/in/karnav-the-developer/",
+        "https://www.youtube.com/@Karnav-Chandan",
+        "https://www.youtube.com/@Karnav-the-developer",
+        "https://www.youtube.com/@karnav-the-gamer",
+        "https://www.instagram.com/karnav_the_developer/",
+        "https://dev.to/karnav_the_developer",
+        "https://www.facebook.com/karnav.chandan.1"
       ],
       "description": "Karnav Chandan is a web developer experimenting with SEO, Google Maps behavior, and web entity documentation."
     }
@@ -144,7 +149,7 @@
           "name": "Is this website a business promotion?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. This website is an experimental and documentation-based platform created to explain learning, experimentation, and real-world technical experience."
+            "text": "No. This website is an experimental documentation platform created to explain learning, experimentation, and real-world technical experience before scaling to larger projects."
           }
         }
       ]
@@ -179,7 +184,6 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
-            /* Prevent horizontal scroll on mobile */
         }
 
         /* ===== NAVBAR ===== */
@@ -191,6 +195,7 @@
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
             z-index: 100;
+            transition: filter 0.4s ease;
         }
 
         .navbar {
@@ -209,8 +214,7 @@
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
             font-weight: 900;
             font-size: 26px;
-            color: #ff3333;
-            /* Solid Blood Red */
+            color: #ff3333; /* Solid Blood Red */
             line-height: 1;
             user-select: none;
             text-decoration: none;
@@ -219,9 +223,7 @@
 
         .nav-logo-wrapper:hover {
             filter: drop-shadow(0 0 8px rgba(255, 51, 51, 0.8));
-            /* Blood Red Glow */
             transform: scale(1.05);
-            /* Slight Pop */
         }
 
         .nav-left img {
@@ -235,7 +237,6 @@
             font-weight: 700;
             letter-spacing: .4px;
             white-space: nowrap;
-            /* Prevent name wrapping */
         }
 
         .nav-right ul {
@@ -243,12 +244,10 @@
             display: flex;
             justify-content: flex-end;
             gap: 12px;
-            /* Slightly tighter for better mobile fit if wrapping */
             margin: 0;
             padding: 0;
         }
 
-        /* MODERN NAV BUTTONS */
         .nav-right a {
             color: var(--muted);
             text-decoration: none;
@@ -256,26 +255,354 @@
             font-weight: 500;
             padding: 8px 16px;
             border-radius: 50px;
-            /* Modern Pill Shape */
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
         }
 
-        /* Glass Pill Hover Effect */
         .nav-right a:hover {
             color: #fff;
             background: rgba(77, 208, 225, 0.1);
             box-shadow: 0 0 15px rgba(77, 208, 225, 0.15);
-            /* Subtle Glow */
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
         }
-
-        /* Active/Focus State */
+        
         .nav-right a:active {
             transform: scale(0.95);
         }
 
-        /* ===== HERO ===== */
+        /* ===== SOCIAL OVERLAY (CENTERED CARD) ===== */
+        .social-overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 2000;
+            text-align: center;
+            pointer-events: none;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social-overlay.active {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .social-overlay .platform-icon-container {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 0 15px rgba(77,208,225,0.6));
+        }
+        
+        .social-overlay .platform-icon-container svg {
+            width: 40px;
+            height: 40px;
+            fill: #fff;
+        }
+
+        .social-overlay h2 {
+            font-size: 28px;
+            color: #fff;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        .social-overlay img.brand-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(77, 208, 225, 0.4);
+            border: 2px solid rgba(77, 208, 225, 0.5);
+            margin: 10px 0;
+            object-fit: cover;
+        }
+
+        .social-overlay p {
+            color: #fff;
+            font-size: 15px;
+            margin: 0;
+            background: rgba(0,0,0,0.6);
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(4px);
+        }
+
+        /* ===== YOUTUBE SELECTOR OVERLAY (NEW) ===== */
+        .yt-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .yt-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .yt-card-container {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 24px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 20px 50px -10px rgba(0,0,0,0.6);
+        }
+
+        .yt-overlay.active .yt-card-container {
+            transform: scale(1);
+        }
+
+        .close-yt {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            color: var(--muted);
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-yt:hover {
+            color: #fff;
+        }
+
+        .yt-card-container h3 {
+            margin-top: 0;
+            color: #fff;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .yt-channels {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .yt-channel-btn {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            color: #e6e6e6;
+            transition: all 0.2s ease;
+        }
+
+        .yt-channel-btn:hover {
+            background: rgba(77, 208, 225, 0.1);
+            border-color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .yt-icon-box {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+
+        .yt-icon-box svg {
+            width: 20px;
+            height: 20px;
+            fill: #ff0000;
+        }
+
+        .yt-info {
+            text-align: left;
+        }
+
+        .yt-info strong {
+            display: block;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .yt-info span {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* BLUR MODE FOR BODY */
+        body.blur-mode .main-wrapper {
+            filter: blur(12px) brightness(0.6);
+            transform: scale(0.98);
+            opacity: 0.6;
+        }
+        
+        .main-wrapper {
+            transition: filter 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+            width: 100%;
+        }
+
+        /* ===== FLOATING SOCIALS ===== */
+        .floating-socials {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px 12px;
+            background: rgba(11, 15, 20, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            z-index: 1999;
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .floating-socials.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .floating-socials a {
+            color: var(--muted);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .floating-socials a:hover {
+            color: var(--accent);
+            transform: scale(1.2);
+        }
+
+        .floating-socials svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .floating-socials a::after {
+            display: none;
+        }
+
+        /* ===== WHATSAPP CTA (LEFT) ===== */
+        .whatsapp-cta {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 2001; 
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            animation: pulse-green 2s infinite;
+        }
+
+        .whatsapp-cta:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-cta svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        /* ===== SCROLL UP BUTTON ===== */
+        .scroll-up {
+            position: fixed;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%) translateY(100px);
+            z-index: 2001;
+            background: rgba(77, 208, 225, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(77, 208, 225, 0.4);
+            color: var(--accent);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-up.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-up:hover {
+            background: rgba(77, 208, 225, 0.3);
+            box-shadow: 0 0 15px rgba(77, 208, 225, 0.3);
+            transform: translateX(-50%) translateY(-5px);
+        }
+
+        .scroll-up svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* ===== HERO & OTHER CSS (PRESERVED) ===== */
         .hero {
             max-width: 1100px;
             margin: 80px auto 140px;
@@ -283,7 +610,6 @@
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
             gap: 40px;
-            /* Reduced gap for better tablet fit */
             align-items: center;
         }
 
@@ -298,7 +624,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-shadow: 0 0 30px rgba(77, 208, 225, 0.1);
+            text-shadow: 0 0 30px rgba(77, 208, 225, 0.1); 
         }
 
         .hero p {
@@ -308,958 +634,593 @@
             font-size: 1.05rem;
         }
 
-        /* ===== SHATTER EFFECT CORE CSS ===== */
-        .shatter-container {
-            position: relative;
-            display: inline-block;
-            overflow: hidden;
-            border-radius: 8px;
-        }
+        .shatter-container { position: relative; display: inline-block; overflow: hidden; border-radius: 8px; }
+        .glass-grid { position: absolute; inset: 0; z-index: 10; width: 100%; height: 100%; pointer-events: none; }
+        .shard { position: absolute; inset: 0; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); opacity: 1; }
+        .shard:nth-child(1) { clip-path: polygon(0 0, 60% 0, 50% 50%, 0 60%); }
+        .shard:nth-child(2) { clip-path: polygon(60% 0, 100% 0, 100% 60%, 50% 50%); }
+        .shard:nth-child(3) { clip-path: polygon(100% 60%, 100% 100%, 40% 100%, 50% 50%); }
+        .shard:nth-child(4) { clip-path: polygon(0 60%, 50% 50%, 40% 100%, 0 100%); }
+        .shatter-container.shattered .shard:nth-child(1) { transform: translate(-30px, -30px) rotate(-15deg); opacity: 0; }
+        .shatter-container.shattered .shard:nth-child(2) { transform: translate(30px, -20px) rotate(15deg); opacity: 0; }
+        .shatter-container.shattered .shard:nth-child(3) { transform: translate(20px, 30px) rotate(-10deg); opacity: 0; }
+        .shatter-container.shattered .shard:nth-child(4) { transform: translate(-20px, 20px) rotate(10deg); opacity: 0; }
+        .interaction-hint { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 20; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.4); padding: 4px 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); pointer-events: none; transition: opacity 0.3s ease; white-space: nowrap; }
+        .shatter-container.shattered .interaction-hint { opacity: 0; }
+        .hero-sub-wrapper { margin-top: 20px; display: inline-block; cursor: pointer; }
+        .hero-sub-text { display: block; padding: 8px 18px; font-size: 16px; font-weight: 500; color: var(--accent); letter-spacing: 0.5px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; background: rgba(255,255,255,0.03); }
+        .profile-anim-wrapper { position: relative; width: 100%; max-width: 320px; margin: 0 auto; animation: float 6s ease-in-out infinite; z-index: 1; }
+        .profile-anim-wrapper::before { content: ''; position: absolute; inset: -4px; border-radius: 22px; background: linear-gradient(135deg, var(--accent), #7928ca, var(--accent)); z-index: -1; filter: blur(15px); opacity: 0.5; transition: opacity 0.3s ease; }
+        .profile-anim-wrapper:hover::before { opacity: 0.8; }
+        .profile-shatter-wrapper { position: relative; width: 100%; height: 100%; border-radius: 18px; overflow: hidden; cursor: pointer; }
+        .profile-shatter-wrapper img { width: 100%; display: block; border-radius: 18px; box-shadow: 0 0 0 1px rgba(255,255,255,0.1); background: var(--panel); }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+
+        main { max-width: 1100px; margin: auto; padding: 0 20px 80px; }
+        section { margin-bottom: 100px; }
+        h2 { font-size: 28px; margin-bottom: 24px; color: #fff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+        .flip-card { background-color: transparent; perspective: 1000px; min-height: 240px; }
+        .flip-card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); transform-style: preserve-3d; }
+        .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card-front, .flip-card-back { position: absolute; inset: 0; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: 16px; padding: 26px; background: var(--panel); border: 1px solid var(--border); box-shadow: 0 10px 40px -10px rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: space-between; }
+        .flip-card-front { z-index: 2; }
+        .flip-card-back { transform: rotateY(180deg); align-items: center; justify-content: center; background: linear-gradient(145deg, #1a2230, #121823); border-color: var(--accent); }
+        .flip-card h3 { color: var(--accent); margin-top: 0; font-size: 1.2rem; }
+        @keyframes breathe-glow { 0% { box-shadow: 0 0 2px rgba(77, 208, 225, 0.1); border-color: var(--border); background: rgba(255,255,255,0.02); } 100% { box-shadow: 0 0 12px rgba(77, 208, 225, 0.4); border-color: rgba(77, 208, 225, 0.6); background: rgba(77, 208, 225, 0.05); } }
+        .flip-card-front .tag { display: inline-block; padding: 5px 14px; font-size: 11px; text-transform: uppercase; font-weight: 600; border-radius: 20px; border: 1px solid var(--border); color: var(--muted); margin: 8px 6px 0 0; animation: breathe-glow 2.5s infinite alternate ease-in-out; }
+        .tag { display: inline-block; padding: 5px 14px; font-size: 11px; text-transform: uppercase; font-weight: 600; border-radius: 20px; border: 1px solid var(--border); color: var(--muted); margin: 8px 6px 0 0; }
+        
+        .terminal { background: #05080d; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; font-family: 'SF Mono', 'Fira Code', ui-monospace, monospace; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .terminal-header { display: flex; align-items: center; gap: 8px; padding: 12px 16px; background: #0d121c; border-bottom: 1px solid var(--border); }
+        .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .red { background: #ef4444; } .yellow { background: #facc15; } .green { background: #22c55e; }
+        .terminal-title { margin-left: 10px; font-size: 13px; color: var(--muted); opacity: 0.7; }
+        .terminal-body { padding: 24px; font-size: 14px; line-height: 1.7; color: var(--text); min-height: 200px; }
+        .cmd { color: #00ff41; text-shadow: 0 0 5px rgba(0, 255, 65, 0.4); }
+        .output { color: #ff3333; margin-bottom: 16px; text-shadow: 0 0 8px rgba(255, 51, 51, 0.6); font-weight: 500; }
+        .cursor { display: inline-block; width: 8px; height: 15px; background: #00ff41; margin-left: 4px; vertical-align: middle; animation: blink 1s steps(2, start) infinite; }
+        @keyframes blink { to { visibility: hidden; } }
+
+        .project-terminal { max-width: 900px; }
+        .project-block { margin-bottom: 40px; background: #05080d; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transition: border-color 0.3s ease; }
+        .project-block:hover { border-color: rgba(77, 208, 225, 0.3); }
+        .project-header { display: flex; align-items: center; gap: 14px; padding: 16px; border-bottom: 1px solid var(--border); background: #0d121c; }
+        .project-header img { width: 38px; height: 38px; object-fit: contain; border-radius: 6px; background: #fff; }
+        .project-header h3 { margin: 0; font-size: 16px; color: var(--text); font-weight: 600; }
+        .project-block .terminal-body { padding: 20px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 14px; min-height: auto; }
+
+        .faq-list { display: grid; gap: 22px; max-width: 900px; }
+        .faq-item { position: relative; padding: 24px 28px; background: linear-gradient(145deg, rgba(18, 24, 35, 0.6), rgba(11, 15, 20, 0.8)); border: 1px solid var(--border); border-radius: 14px; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+        .faq-item::before { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 3px; background: linear-gradient(180deg, var(--accent), transparent); border-radius: 14px 0 0 14px; opacity: 0.7; }
+        .faq-item:hover { transform: translateY(-2px); border-color: rgba(77, 208, 225, 0.2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); }
+        .faq-item h3 { margin: 0 0 12px; font-size: 18px; color: var(--text); letter-spacing: 0.3px; }
+        .faq-item h3 span { color: var(--accent); }
+        .faq-item p { margin: 0; color: var(--muted); line-height: 1.7; }
 
-        .glass-grid {
-            position: absolute;
-            inset: 0;
-            z-index: 10;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .shard {
-            position: absolute;
-            inset: 0;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-            opacity: 1;
-        }
-
-        .shard:nth-child(1) {
-            clip-path: polygon(0 0, 60% 0, 50% 50%, 0 60%);
-        }
-
-        .shard:nth-child(2) {
-            clip-path: polygon(60% 0, 100% 0, 100% 60%, 50% 50%);
-        }
-
-        .shard:nth-child(3) {
-            clip-path: polygon(100% 60%, 100% 100%, 40% 100%, 50% 50%);
-        }
-
-        .shard:nth-child(4) {
-            clip-path: polygon(0 60%, 50% 50%, 40% 100%, 0 100%);
-        }
-
-        .shatter-container.shattered .shard:nth-child(1) {
-            transform: translate(-30px, -30px) rotate(-15deg);
-            opacity: 0;
-        }
-
-        .shatter-container.shattered .shard:nth-child(2) {
-            transform: translate(30px, -20px) rotate(15deg);
-            opacity: 0;
-        }
-
-        .shatter-container.shattered .shard:nth-child(3) {
-            transform: translate(20px, 30px) rotate(-10deg);
-            opacity: 0;
-        }
-
-        .shatter-container.shattered .shard:nth-child(4) {
-            transform: translate(-20px, 20px) rotate(10deg);
-            opacity: 0;
-        }
-
-        .interaction-hint {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 20;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: rgba(255, 255, 255, 0.9);
-            background: rgba(0, 0, 0, 0.4);
-            padding: 4px 12px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .shatter-container.shattered .interaction-hint {
-            opacity: 0;
-        }
-
-        .hero-sub-wrapper {
-            margin-top: 20px;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        .hero-sub-text {
-            display: block;
-            padding: 8px 18px;
-            font-size: 16px;
-            font-weight: 500;
-            color: var(--accent);
-            letter-spacing: 0.5px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.03);
-        }
-
-        .profile-anim-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 320px;
-            margin: 0 auto;
-            animation: float 6s ease-in-out infinite;
-            z-index: 1;
-        }
-
-        .profile-anim-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border-radius: 22px;
-            background: linear-gradient(135deg, var(--accent), #7928ca, var(--accent));
-            z-index: -1;
-            filter: blur(15px);
-            opacity: 0.5;
-            transition: opacity 0.3s ease;
-        }
-
-        .profile-anim-wrapper:hover::before {
-            opacity: 0.8;
-        }
-
-        .profile-shatter-wrapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 18px;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .profile-shatter-wrapper img {
-            width: 100%;
-            display: block;
-            border-radius: 18px;
-            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-            background: var(--panel);
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        /* ===== SECTIONS ===== */
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 0 20px 80px;
-        }
-
-        section {
-            margin-bottom: 100px;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-bottom: 24px;
-            color: #fff;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-
-        /* ===== FLIP CARD SYSTEM ===== */
-        .flip-card {
-            background-color: transparent;
-            perspective: 1000px;
-            min-height: 240px;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transform-style: preserve-3d;
-        }
-
-        .flip-card:hover .flip-card-inner,
-        .flip-card:active .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            border-radius: 16px;
-            padding: 26px;
-            background: var(--panel);
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.6);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .flip-card-front {
-            z-index: 2;
-        }
-
-        .flip-card-back {
-            transform: rotateY(180deg);
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(145deg, #1a2230, #121823);
-            border-color: var(--accent);
-        }
-
-        .flip-card h3 {
-            color: var(--accent);
-            margin-top: 0;
-            font-size: 1.2rem;
-        }
-
-        /* ===== BREATHING TAG ANIMATION ===== */
-        @keyframes breathe-glow {
-            0% {
-                box-shadow: 0 0 2px rgba(77, 208, 225, 0.1);
-                border-color: var(--border);
-                background: rgba(255, 255, 255, 0.02);
-            }
-
-            100% {
-                box-shadow: 0 0 12px rgba(77, 208, 225, 0.4);
-                border-color: rgba(77, 208, 225, 0.6);
-                background: rgba(77, 208, 225, 0.05);
-            }
-        }
-
-        .flip-card-front .tag {
-            display: inline-block;
-            padding: 5px 14px;
-            font-size: 11px;
-            text-transform: uppercase;
-            font-weight: 600;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            color: var(--muted);
-            margin: 8px 6px 0 0;
-            animation: breathe-glow 2.5s infinite alternate ease-in-out;
-        }
-
-        /* Static tag for other areas */
-        .tag {
-            display: inline-block;
-            padding: 5px 14px;
-            font-size: 11px;
-            text-transform: uppercase;
-            font-weight: 600;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            color: var(--muted);
-            margin: 8px 6px 0 0;
-        }
-
-        .visit-btn {
-            display: inline-block;
-            padding: 12px 28px;
-            background: var(--accent);
-            color: #000;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 30px;
-            box-shadow: 0 0 20px rgba(77, 208, 225, 0.4);
-            transition: transform 0.2s;
-        }
-
-        .visit-btn:hover {
-            transform: scale(1.1);
-            background: #fff;
-        }
-
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 14px;
-            color: var(--muted);
-            background: #0b0f14;
-        }
-
-        /* ===== UNIQUE FAQ STYLING ===== */
-        .faq-list {
-            display: grid;
-            gap: 22px;
-            max-width: 900px;
-        }
-
-        .faq-item {
-            position: relative;
-            padding: 24px 28px;
-            background: linear-gradient(145deg,
-                    rgba(18, 24, 35, 0.6),
-                    rgba(11, 15, 20, 0.8));
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-        }
-
-        .faq-item::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 3px;
-            background: linear-gradient(180deg,
-                    var(--accent),
-                    transparent);
-            border-radius: 14px 0 0 14px;
-            opacity: 0.7;
-        }
-
-        .faq-item:hover {
-            transform: translateY(-2px);
-            border-color: rgba(77, 208, 225, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-        }
-
-        .faq-item h3 {
-            margin: 0 0 12px;
-            font-size: 18px;
-            color: var(--text);
-            letter-spacing: 0.3px;
-        }
-
-        .faq-item h3 span {
-            color: var(--accent);
-        }
-
-        .faq-item p {
-            margin: 0;
-            color: var(--muted);
-            line-height: 1.7;
-        }
-
-        /* ===== REAL TERMINAL ===== */
-        .terminal {
-            background: #05080d;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            overflow: hidden;
-            font-family: 'SF Mono', 'Fira Code', ui-monospace, monospace;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-        }
-
-        .terminal-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 16px;
-            background: #0d121c;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-
-        .red {
-            background: #ef4444;
-        }
-
-        .yellow {
-            background: #facc15;
-        }
-
-        .green {
-            background: #22c55e;
-        }
-
-        .terminal-title {
-            margin-left: 10px;
-            font-size: 13px;
-            color: var(--muted);
-            opacity: 0.7;
-        }
-
-        .terminal-body {
-            padding: 24px;
-            font-size: 14px;
-            line-height: 1.7;
-            color: var(--text);
-            min-height: 200px;
-        }
-
-        /* ===== UPDATED TERMINAL COLORS ===== */
-        .cmd {
-            color: #00ff41;
-            text-shadow: 0 0 5px rgba(0, 255, 65, 0.4);
-        }
-
-        .output {
-            color: #ff3333;
-            margin-bottom: 16px;
-            text-shadow: 0 0 8px rgba(255, 51, 51, 0.6);
-            font-weight: 500;
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 15px;
-            background: #00ff41;
-            margin-left: 4px;
-            vertical-align: middle;
-            animation: blink 1s steps(2, start) infinite;
-        }
-
-        @keyframes blink {
-            to {
-                visibility: hidden;
-            }
-        }
-
-        /* ===== PROJECT TERMINAL ===== */
-        .project-terminal {
-            max-width: 900px;
-        }
-
-        .project-block {
-            margin-bottom: 40px;
-            background: #05080d;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            overflow: hidden;
-            transition: border-color 0.3s ease;
-        }
-
-        .project-block:hover {
-            border-color: rgba(77, 208, 225, 0.3);
-        }
-
-        .project-header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 16px;
-            border-bottom: 1px solid var(--border);
-            background: #0d121c;
-        }
-
-        .project-header img {
-            width: 38px;
-            height: 38px;
-            object-fit: contain;
-            border-radius: 6px;
-            background: #fff;
-        }
-
-        .project-header h3 {
-            margin: 0;
-            font-size: 16px;
-            color: var(--text);
-            font-weight: 600;
-        }
-
-        .project-block .terminal-body {
-            padding: 20px;
-            font-family: 'SF Mono', 'Fira Code', monospace;
-            font-size: 14px;
-            min-height: auto;
-        }
-
-        /* ===== RESPONSIVE POLISH (COMPLETE) ===== */
         @media (max-width: 900px) {
-            .hero {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 50px;
-                margin-top: 60px;
-            }
-
-            .hero-name {
-                font-size: 48px;
-            }
-
-            .profile-anim-wrapper {
-                margin: auto;
-            }
+            .hero { grid-template-columns: 1fr; text-align: center; gap: 50px; margin-top: 60px; }
+            .hero-name { font-size: 48px; }
+            .profile-anim-wrapper { margin: auto; }
         }
 
         @media (max-width: 768px) {
-            .navbar {
+            .navbar { grid-template-columns: 1fr; gap: 15px; padding: 12px 15px; }
+            .nav-left, .nav-center, .nav-right { width: 100%; display: flex; justify-content: center; }
+            .nav-left { order: 1; } .nav-center { order: 2; margin-bottom: 10px; font-size: 18px; } .nav-right { order: 3; }
+            .nav-right ul { width: 100%; justify-content: center; flex-wrap: wrap; gap: 8px; }
+            .nav-right a { font-size: 13px; padding: 6px 12px; }
+            .hero-name { font-size: 40px; }
+            h2 { font-size: 24px; }
+            .flip-card { min-height: 260px; }
+            .terminal-body, .project-block .terminal-body { padding: 15px; font-size: 12px; }
+            .floating-socials { top: auto; bottom: 20px; right: 50%; transform: translateX(50%); flex-direction: row; width: max-content; padding: 10px 20px; }
+        }
+
+        /* ===== FOOTER (Redesign) ===== */
+        footer {
+            margin-top: 100px;
+            padding: 60px 20px 40px;
+            background: linear-gradient(to bottom, #0d121c, #05080d);
+            border-top: 1px solid var(--border);
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0.5;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand h3 {
+            font-size: 24px;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .footer-brand p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer Social Button Styles */
+        .footer-socials a, .footer-socials button {
+            color: var(--muted);
+            background: rgba(255,255,255,0.05);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .footer-socials a:hover, .footer-socials button:hover {
+            color: var(--accent);
+            background: rgba(77, 208, 225, 0.1);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(77, 208, 225, 0.2);
+        }
+
+        .footer-socials svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 50px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
                 grid-template-columns: 1fr;
-                gap: 15px;
-                padding: 12px 15px;
+                gap: 40px;
+                text-align: center;
             }
-
-            .nav-left,
-            .nav-center,
-            .nav-right {
-                width: 100%;
-                display: flex;
+            .footer-brand p {
+                margin: 0 auto;
+            }
+            .footer-socials {
                 justify-content: center;
-            }
-
-            /* Stack logo and name, put nav items below */
-            .nav-left {
-                order: 1;
-            }
-
-            .nav-center {
-                order: 2;
-                margin-bottom: 10px;
-                font-size: 18px;
-            }
-
-            .nav-right {
-                order: 3;
-            }
-
-            /* Scrollable nav menu for very small screens */
-            .nav-right ul {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-                /* Wrap links if needed */
-                gap: 8px;
-            }
-
-            .nav-right a {
-                font-size: 13px;
-                padding: 6px 12px;
-            }
-
-            .hero-name {
-                font-size: 40px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            .flip-card {
-                min-height: 260px;
-                /* Taller for text wrapping on mobile */
-            }
-
-            .terminal-body,
-            .project-block .terminal-body {
-                padding: 15px;
-                font-size: 12px;
             }
         }
     </style>
 </head>
 
-<body>
+<body class="main-body">
 
-    <header>
-        <div class="navbar">
-            <div class="nav-left">
-                <!-- Changed div to 'a' tag for link -->
-                <a href="index.html" class="nav-logo-wrapper">
-                    <span>&lt;</span>
-                    <img src="assets/logo.png" alt="Logo">
-                    <span>&gt;</span>
+    <!-- WRAPPER FOR BLUR EFFECT -->
+    <div class="main-wrapper">
+        <header>
+            <div class="navbar">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-logo-wrapper">
+                        <span>&lt;</span>
+                        <img src="assets/logo.png" alt="Logo">
+                        <span>&gt;</span>
+                    </a>
+                </div>
+                <div class="nav-center">Karnav Chandan</div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#maps">Maps</a></li>
+                        <li><a href="#web-history">WEBS</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="about">
+            <div>
+                <div class="hero-name" id="heroName">Karnav Chandan</div>
+                
+                <div class="shatter-container hero-sub-wrapper" id="glassTextContainer">
+                    <div class="glass-grid">
+                        <span class="shard"></span><span class="shard"></span><span class="shard"></span><span class="shard"></span>
+                    </div>
+                    <div class="interaction-hint">Hover to Reveal</div>
+                    <div class="hero-sub-text">Web Developer & SEO Engineer</div>
+                </div>
+
+                <p>
+                    Experimenting with Web Development & SEO systems, Google Maps behavior,
+                    and real-world search visibility before production deployment.
+                </p>
+            </div>
+
+            <div class="profile-anim-wrapper">
+                <div class="shatter-container profile-shatter-wrapper" id="glassImageContainer">
+                    <div class="glass-grid">
+                        <span class="shard"></span><span class="shard"></span><span class="shard"></span><span class="shard"></span>
+                    </div>
+                    <div class="interaction-hint">Hover to Reveal</div>
+                    <img src="assets/pfp.jpg" alt="Karnav Chandan" onerror="this.src='https://placehold.co/400x400/121823/4dd0e1?text=KC'">
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section id="credentials">
+                <h2>WHO AM I</h2>
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="terminal-title">root@Karnav-The-Developer:~</span>
+                    </div>
+                    <div class="terminal-body" id="terminalBody"></div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <h2>Projects (System Log)</h2>
+                <div class="project-terminal">
+                    <div class="project-block" data-run="false">
+                        <div class="project-header">
+                            <img src="assets/shoprite.png" alt="Shoprite Retail" onerror="this.style.background='#333'">
+                            <h3>Shoprite Retail</h3>
+                        </div>
+                        <div class="terminal-body"></div>
+                        <div class="project-data" hidden>
+                            <span class="tag">$ project shoprite_retail</span>
+                            <span class="tag">role: seo + structure</span>
+                            <span class="tag">keyword: shoprite retail</span>
+                            <span class="tag">result: ranked in 1 month</span>
+                            <span class="tag">method: discipline + fundamentals</span>
+                        </div>
+                    </div>
+                    <div class="project-block" data-run="false">
+                        <div class="project-header">
+                            <img src="assets/yusramall2.jpg" alt="Yusra Mall" onerror="this.style.background='#333'">
+                            <h3>Yusra Mall</h3>
+                        </div>
+                        <div class="terminal-body"></div>
+                        <div class="project-data" hidden>
+                            <span class="tag">$ project yusra_mall</span>
+                            <span class="tag">role: it head</span>
+                            <span class="tag">scope: systems + digital infra</span>
+                            <span class="tag">status: active & trusted</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="web-history">
+                <h2>Web Presence & Crawl History</h2>
+                <p style="margin-bottom: 30px; color: var(--muted);">
+                    This page documents all official websites created and maintained by
+                    <strong>Karnav Chandan</strong> to understand how search engines crawl,
+                    index, and associate a real personal name across the web.
+                </p>
+                <div class="grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>First Crawled Website</h3><p>Initial identity establishment using Google Sites.</p></div>
+                                <div><span class="tag">google sites</span><span class="tag">first crawl</span></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://sites.google.com/view/karnav-chandan/home/" target="_blank" class="visit-btn">Visit Site →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>Developer Identity Website</h3><p>Early branding experiment under “Karnav the Developer”.</p></div>
+                                <div><span class="tag">branding</span><span class="tag">experiment</span></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://sites.google.com/view/karnav-the-developer/" target="_blank" class="visit-btn">Visit Site →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>Current Primary Website</h3><p>Main personal website hosted on GitHub Pages.</p></div>
+                                <div><span class="tag">github pages</span><span class="tag">current</span></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://karnav-chandan.github.io/home/" target="_blank" class="visit-btn">Visit Site →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="maps">
+                <h2>Google Maps Experiments (Historical)</h2>
+                <div class="grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>Karnav the Developer / KTD Plays</h3><p>First Maps experiment, close to my heart.</p></div>
+                                <div><span class="tag">karnav the developer</span><span class="tag">ktd plays</span></div>
+                            </div>
+                            <div class="flip-card-back"><a href="https://share.google/xIMO9uDoPnvLbooaZ" target="_blank" class="visit-btn">View Map →</a></div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>KTD Selfie Point (Gaya)</h3><p>A hidden gem I personally liked.</p></div>
+                                <div><span class="tag">ktd selfie point</span><span class="tag">gaya</span></div>
+                            </div>
+                            <div class="flip-card-back"><a href="https://share.google/mOem3gAQgR7JYHzz7" target="_blank" class="visit-btn">View Map →</a></div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>Karnav Chandan Home</h3><p>Personal location experiment.</p></div>
+                                <div><span class="tag">karnav chandan home</span></div>
+                            </div>
+                            <div class="flip-card-back"><a href="https://share.google/z6f4dEKPKg3H5RYKl" target="_blank" class="visit-btn">View Map →</a></div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div><h3>Web Designer & SEO – Nawada</h3><p>Current active Maps entity.</p></div>
+                                <div><span class="tag">web designer nawada</span><span class="tag">seo expert nawada</span></div>
+                            </div>
+                            <div class="flip-card-back"><a href="https://share.google/zIpAdNoWsUbGqyYj0" target="_blank" class="visit-btn">View Map →</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h2>FAQ – Trust, Authority & Real Experience</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3><span>Q.</span> Who is Karnav Chandan?</h3>
+                        <p>Karnav Chandan is a web developer who experiments with SEO systems, Google Maps visibility, and web entity behavior in real environments before deploying production solutions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><span>Q.</span> Why should people trust you?</h3>
+                        <p>Trust is built through responsibility and real-world roles. I currently work as the IT Head at Yusra Mall, Nawada’s first multi-brand mall, where I handle systems, digital presence, and technical decisions at an organizational level.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><span>Q.</span> Are you a normal freelancer?</h3>
+                        <p>No. I am no longer operating as a typical freelancer. My work is outcome-driven, based on ownership, experimentation, and long-term system thinking rather than short-term tasks.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><span>Q.</span> Can you share a real SEO case study?</h3>
+                        <p>One real SEO case study involves Shoprite Retail. Despite brand restrictions, the website began ranking for the keyword “shoprite retail” within one month through correct structure, content discipline, and SEO fundamentals.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><span>Q.</span> Why should someone choose you when there are millions of developers?</h3>
+                        <p>Many developers have skills, but most lack either strong branding or strong technical depth. I work at the intersection of both. While many developers remain jobless, organizations such as Yusra Mall and Shoprite Retail actively trust my skills and decisions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><span>Q.</span> Is this website a business promotion?</h3>
+                        <p>No. This website is an experimental documentation platform created to explain learning, experimentation, and real-world technical experience before scaling to larger projects.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Karnav Chandan</h3>
+                    <p>Web Developer & SEO Engineer specializing in systems, Google Maps behavior, and search visibility.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#web-history">Web History</a></li>
+                        <li><a href="#maps">Maps Experiments</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-socials">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/karnav-the-developer/" target="_blank" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        
+                        <!-- YOUTUBE TRIGGER BUTTON (Updated) -->
+                        <button onclick="openYtOverlay()" title="YouTube Channels">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </button>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/karnav_the_developer/" target="_blank" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <!-- Dev.to -->
+                        <a href="https://dev.to/karnav_the_developer" target="_blank" title="Dev.to">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.74-.17h-2.17v-3.24c0-2.74.02-3.26.09-3.33.23-.23 1.79-.23 2.01 0 .07.07.09.57.09 3.26v3.31h-2.02zm6.35-3.31v3.33h-1.45V8.5h3.09v1.36h-1.64v5.27h1.47v-3.28z"/></svg>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/karnav.chandan.1" target="_blank" title="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                © 2026 · Experimental Documentation · Built & maintained by Karnav Chandan
+            </div>
+        </footer>
+    </div> <!-- End of main-wrapper -->
+
+    <!-- ===== YOUTUBE SELECTOR OVERLAY (NEW) ===== -->
+    <div class="yt-overlay" id="ytOverlay">
+        <div class="yt-card-container">
+            <button class="close-yt" onclick="closeYtOverlay()">&times;</button>
+            <h3>Select Channel</h3>
+            <div class="yt-channels">
+                
+                <!-- 1. Personal Channel -->
+                <a href="https://www.youtube.com/@Karnav-Chandan" target="_blank" class="yt-channel-btn">
+                    <div class="yt-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    </div>
+                    <div class="yt-info">
+                        <strong>Personal Vlogs</strong>
+                        <span>My daily life & adventures</span>
+                    </div>
                 </a>
-            </div>
 
-            <div class="nav-center">Karnav Chandan</div>
+                <!-- 2. Dev Channel -->
+                <a href="https://www.youtube.com/@Karnav-the-developer" target="_blank" class="yt-channel-btn">
+                    <div class="yt-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    </div>
+                    <div class="yt-info">
+                        <strong>Dev Tutorials</strong>
+                        <span>Coding, Tech & Guides</span>
+                    </div>
+                </a>
 
-            <div class="nav-right">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#maps">Maps</a></li>
-                    <li><a href="#web-history">WEBS</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+                <!-- 3. Gaming Channel -->
+                <a href="https://www.youtube.com/@karnav-the-gamer" target="_blank" class="yt-channel-btn">
+                    <div class="yt-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    </div>
+                    <div class="yt-info">
+                        <strong>Gaming Highlights</strong>
+                        <span>Streams & Gameplay</span>
+                    </div>
+                </a>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="about">
-        <div>
-            <div class="hero-name" id="heroName">Karnav Chandan</div>
-
-            <!-- HERO SUBTEXT WITH REGENERATING GLASS -->
-            <div class="shatter-container hero-sub-wrapper" id="glassTextContainer">
-                <!-- The Glass Overlay -->
-                <div class="glass-grid">
-                    <span class="shard"></span>
-                    <span class="shard"></span>
-                    <span class="shard"></span>
-                    <span class="shard"></span>
-                </div>
-                <!-- NEW HINT TEXT -->
-                <div class="interaction-hint">Hover to Reveal</div>
-                <!-- The Content -->
-                <div class="hero-sub-text">
-                    Web Developer & SEO Engineer
-                </div>
-            </div>
-
-            <p>
-                Experimenting with Web Development & SEO systems, Google Maps behavior,
-                and real-world search visibility before production deployment.
-            </p>
-        </div>
-
-        <!-- PROFILE IMAGE WITH ANIMATION WRAPPER & GLOW -->
-        <div class="profile-anim-wrapper"> <!-- Handles Float & Glow -->
-            <div class="shatter-container profile-shatter-wrapper" id="glassImageContainer"> <!-- Handles Glass -->
-                <!-- The Glass Overlay -->
-                <div class="glass-grid">
-                    <span class="shard"></span>
-                    <span class="shard"></span>
-                    <span class="shard"></span>
-                    <span class="shard"></span>
-                </div>
-                <!-- NEW HINT TEXT -->
-                <div class="interaction-hint">Hover to Reveal</div>
-                <!-- The Image -->
-                <img src="assets/pfp.jpg" alt="Karnav Chandan"
-                    onerror="this.src='https://placehold.co/400x400/121823/4dd0e1?text=KC'">
             </div>
         </div>
-    </section>
+    </div>
 
-    <main>
-        <section id="credentials">
-            <h2>WHO AM I</h2>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="terminal-title">root@Karnav-The-Developer:~</span>
-                </div>
-
-                <div class="terminal-body" id="terminalBody">
-                    <!-- Lines will be typed here -->
-                </div>
+    <!-- ===== FLOATING SOCIALS ===== -->
+    <div class="floating-socials" id="floatingSocials">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/karnav-the-developer/" target="_blank" data-platform="LinkedIn" data-desc="Connect with me professionally">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <!-- Personal YouTube -->
+        <a href="https://www.youtube.com/@Karnav-Chandan" target="_blank" data-platform="YouTube (Personal)" data-desc="My personal vlogs and life">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+        </a>
+        <!-- Dev YouTube -->
+        <a href="https://www.youtube.com/@Karnav-the-developer" target="_blank" data-platform="YouTube (Dev)" data-desc="Coding tutorials & tech talks">
+            <div style="position:relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                <span style="position:absolute; bottom:-4px; right:-4px; font-size:10px; font-weight:bold; color:#4dd0e1; background:rgba(0,0,0,0.8); padding:0 2px; border-radius:3px;">{ }</span>
             </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects (System Log)</h2>
-
-            <div class="project-terminal">
-                <!-- PROJECT 2 -->
-                <div class="project-block" data-run="false">
-                    <div class="project-header">
-                        <img src="assets/yusramall2.jpg" alt="Yusra Mall" onerror="this.style.background='#333'">
-                        <h3>Yusra Mall</h3>
-                    </div>
-                    <div class="terminal-body"></div>
-
-                    <div class="project-data" hidden>
-                        <span class="tag">$ project yusra_mall</span>
-                        <span class="tag">role: IT Head </span>
-                        <span class="tag">scope: systems + digital infra</span>
-                        <span class="tag">status: active & trusted</span>
-                    </div>
-                </div>
-
-                <!-- PROJECT 1 -->
-                <div class="project-block" data-run="false">
-                    <div class="project-header">
-                        <img src="assets/shoprite.png" alt="Shoprite Retail" onerror="this.style.background='#333'">
-                        <h3>Shoprite Retail</h3>
-                    </div>
-                    <div class="terminal-body"></div>
-
-                    <!-- Editable tags (ONLY edit text) -->
-                    <div class="project-data" hidden>
-                        <span class="tag">$ project shoprite_retail</span>
-                        <span class="tag">role: Developer </span>
-                        <span class="tag">scope: Graphic & Visual with digital branding</span>
-                        <span class="tag">result: ranked in 1 month</span>
-                        <span class="tag">method: discipline + fundamentals + seo + structure</span>
-                        <span class="tag">status: active & trusted</span>
-                    </div>
-                </div>
+        </a>
+        <!-- Gaming YouTube -->
+        <a href="https://www.youtube.com/@karnav-the-gamer" target="_blank" data-platform="YouTube (Gaming)" data-desc="Gaming highlights & streams">
+            <div style="position:relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                <span style="position:absolute; bottom:-4px; right:-4px; font-size:10px;">🎮</span>
             </div>
-        </section>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/karnav_the_developer/" target="_blank" data-platform="Instagram" data-desc="Behind the scenes & daily updates">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/karnav.chandan.1" target="_blank" data-platform="Facebook" data-desc="Social updates & connections">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+        </a>
+    </div>
 
+    <!-- ===== SOCIAL PREVIEW OVERLAY (NEW) ===== -->
+    <div class="social-overlay">
+        <div class="platform-icon-container"></div>
+        <h2>Karnav Chandan</h2>
+        <!-- Brand Image: Using the Android Favicon as requested -->
+        <img src="android-chrome-192x192.png" alt="Brand Logo" class="brand-logo" onerror="this.src='assets/pfp.jpg'">
+        <p>Connect with me</p>
+    </div>
 
-        <section id="web-history">
-            <h2>Web Presence & Crawl History</h2>
-            <p style="margin-bottom: 30px; color: var(--muted);">
-                This page documents all official websites created and maintained by
-                <strong>Karnav Chandan</strong> to understand how search engines crawl,
-                index, and associate a real personal name across the web.
-            </p>
+    <!-- ===== WHATSAPP FLOATING BUTTON (LEFT) - ALWAYS VISIBLE ===== -->
+    <a href="https://wa.me/918002517050" class="whatsapp-cta" target="_blank" title="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
 
-            <div class="grid">
+    <!-- ===== SCROLL UP BUTTON (CENTER BOTTOM) ===== -->
+    <div class="scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 17v-9.414l-3.293 3.293-1.414-1.414 5.707-5.707 5.707 5.707-1.414 1.414-3.293-3.293v9.414h-2z"/></svg>
+    </div>
 
-                <!-- CARD 1 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>First Crawled Website</h3>
-                                <p>Initial identity establishment using Google Sites.</p>
-                            </div>
-                            <div>
-                                <span class="tag">google sites</span>
-                                <span class="tag">first crawl</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://sites.google.com/view/karnav-chandan/home/" target="_blank"
-                                class="visit-btn">
-                                Visit Site →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>Developer Identity Website</h3>
-                                <p>Early branding experiment under “Karnav the Developer”.</p>
-                            </div>
-                            <div>
-                                <span class="tag">branding</span>
-                                <span class="tag">experiment</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://sites.google.com/view/karnav-the-developer/" target="_blank"
-                                class="visit-btn">
-                                Visit Site →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>Current Primary Website</h3>
-                                <p>Main personal website hosted on GitHub Pages.</p>
-                            </div>
-                            <div>
-                                <span class="tag">github pages</span>
-                                <span class="tag">current</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://karnav-chandan.github.io/home/" target="_blank" class="visit-btn">
-                                Visit Site →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="maps">
-            <h2>Google Maps Experiments (Historical)</h2>
-
-            <div class="grid">
-
-                <!-- CARD 1 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>Karnav the Developer / KTD Plays</h3>
-                                <p>First Maps experiment, close to my heart.</p>
-                            </div>
-                            <div>
-                                <span class="tag">karnav the developer</span>
-                                <span class="tag">ktd plays</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://share.google/xIMO9uDoPnvLbooaZ" target="_blank" class="visit-btn">
-                                View Map →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>KTD Selfie Point (Gaya)</h3>
-                                <p>A hidden gem I personally liked.</p>
-                            </div>
-                            <div>
-                                <span class="tag">ktd selfie point</span>
-                                <span class="tag">gaya</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://share.google/mOem3gAQgR7JYHzz7" target="_blank" class="visit-btn">
-                                View Map →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>Karnav Chandan Home</h3>
-                                <p>Personal location experiment.</p>
-                            </div>
-                            <div>
-                                <span class="tag">karnav chandan home</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://share.google/z6f4dEKPKg3H5RYKl" target="_blank" class="visit-btn">
-                                View Map →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div>
-                                <h3>Web Designer & SEO – Nawada</h3>
-                                <p>Current active Maps entity.</p>
-                            </div>
-                            <div>
-                                <span class="tag">web designer nawada</span>
-                                <span class="tag">seo expert nawada</span>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <a href="https://share.google/zIpAdNoWsUbGqyYj0" target="_blank" class="visit-btn">
-                                View Map →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="faq">
-            <h2>FAQ – Trust, Authority & Real Experience</h2>
-
-            <div class="faq-list">
-
-                <div class="faq-item">
-                    <h3><span>Q.</span> Who is Karnav Chandan?</h3>
-                    <p>
-                        Karnav Chandan is a web developer who experiments with SEO systems,
-                        Google Maps visibility, and web entity behavior in real environments
-                        before deploying production solutions.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3><span>Q.</span> Why should people trust you?</h3>
-                    <p>
-                        Trust is built through responsibility and real-world roles.
-                        I currently work as the IT Head at Yusra Mall, Nawada’s first
-                        multi-brand mall, where I handle systems, digital presence,
-                        and technical decisions at an organizational level.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3><span>Q.</span> Are you a normal freelancer?</h3>
-                    <p>
-                        No. I am no longer operating as a typical freelancer.
-                        My work is outcome-driven, based on ownership, experimentation,
-                        and long-term system thinking rather than short-term tasks.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3><span>Q.</span> Can you share a real SEO case study?</h3>
-                    <p>
-                        One real SEO case study involves Shoprite Retail.
-                        Despite brand restrictions, the website began ranking for the
-                        keyword “shoprite retail” within one month through correct
-                        structure, content discipline, and SEO fundamentals.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3><span>Q.</span> Why should someone choose you when there are millions of developers?</h3>
-                    <p>
-                        Many developers have skills, but most lack either strong branding
-                        or strong technical depth. I work at the intersection of both.
-                        While many developers remain jobless, organizations such as
-                        Yusra Mall and Shoprite Retail actively trust my skills and decisions.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3><span>Q.</span> Is this website a business promotion?</h3>
-                    <p>
-                        No. This website is an experimental documentation platform
-                        created to explain learning, experimentation, and real-world
-                        technical experience before scaling to larger projects.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-
-
-    </main>
-
-    <footer>
-        © 2026 · Experimental Documentation · Built & maintained by Karnav Chandan
-    </footer>
-
-    <!-- ===== GLOW EFFECT SCRIPT ===== -->
+    <!-- ===== GLOW EFFECT SCRIPT & INTERACTIONS ===== -->
     <script>
         const hero = document.getElementById("heroName");
         hero.addEventListener("mousemove", e => {
@@ -1268,70 +1229,19 @@
             hero.style.setProperty("--y", `${e.clientY - rect.top}px`);
         });
 
-        // ==========================
-        // NEW GLASS SHATTER LOGIC
-        // ==========================
-
-        // 1. TEXT LOGIC (Regenerates after 2s)
-        const glassText = document.getElementById('glassTextContainer');
-        let textTimeout;
-
-        function shatterText() {
-            // If already shattered, do nothing (wait for it to reform)
-            if (glassText.classList.contains('shattered')) return;
-
-            // Shatter!
-            glassText.classList.add('shattered');
-
-            // Set timer to regenerate
-            clearTimeout(textTimeout);
-            textTimeout = setTimeout(() => {
-                glassText.classList.remove('shattered');
-            }, 2000);
-        }
-
-        glassText.addEventListener('mouseenter', shatterText);
-        glassText.addEventListener('click', shatterText);
-
-        // 2. IMAGE LOGIC (One time only)
-        const glassImage = document.getElementById('glassImageContainer');
-        let imageShattered = false;
-
-        function shatterImage() {
-            // If already shattered, do nothing forever
-            if (imageShattered) return;
-
-            // Shatter!
-            glassImage.classList.add('shattered');
-            imageShattered = true; // Prevents future triggers
-        }
-
-        glassImage.addEventListener('mouseenter', shatterImage);
-        glassImage.addEventListener('click', shatterImage);
-
-
-        // ==========================
-        // TERMINAL LOGIC (Unchanged)
-        // ==========================
         const terminalLines = [
             { type: "cmd", text: "$ who am i" },
             { type: "out", text: "Karnav Chandan — Web Developer / SEO Engineer" },
-
             { type: "cmd", text: "$ role" },
             { type: "out", text: "IT Head @ Yusra Mall Nawada" },
             { type: "out", text: "Time Period: Aug 2025 - Present" },
-
             { type: "cmd", text: "$ role_2" },
             { type: "out", text: "Developer @ Shoprite Retail" },
             { type: "out", text: "Time Period: Nov 2025 - Present" },
-
             { type: "cmd", text: "$ market_status" },
             { type: "out", text: "Active • Trusted • Not jobless" },
-
             { type: "cmd", text: "$ case_study shoprite" },
             { type: "out", text: "Ranked keyword \"shoprite retail\" in 1 month" },
-            { type: "out", text: "Method: structure + discipline + SEO fundamentals" },
-
             { type: "cmd", text: "$ philosophy" },
             { type: "out", text: "Build systems → test → document → scale" }
         ];
@@ -1343,12 +1253,10 @@
             const line = document.createElement("div");
             line.className = className;
             terminalBody.appendChild(line);
-
             let i = 0;
             const cursor = document.createElement("span");
             cursor.className = "cursor";
             line.appendChild(cursor);
-
             const typer = setInterval(() => {
                 if (i < text.length) {
                     line.insertBefore(document.createTextNode(text[i]), cursor);
@@ -1363,9 +1271,7 @@
 
         function runTerminal(index = 0) {
             if (index >= terminalLines.length) return;
-
             const item = terminalLines[index];
-
             if (item.type === "cmd") {
                 typeLine(item.text, "cmd", () => {
                     setTimeout(() => runTerminal(index + 1), 400);
@@ -1387,19 +1293,16 @@
                 }
             });
         }, { threshold: 0.4 });
-
         terminalObserver.observe(document.getElementById("credentials"));
 
         function typeProjectLine(container, text, className, done) {
             const line = document.createElement("div");
             line.className = className;
             container.appendChild(line);
-
             let i = 0;
             const cursor = document.createElement("span");
             cursor.className = "cursor";
             line.appendChild(cursor);
-
             const interval = setInterval(() => {
                 if (i < text.length) {
                     line.insertBefore(document.createTextNode(text[i]), cursor);
@@ -1416,11 +1319,9 @@
             const body = block.querySelector(".terminal-body");
             const tags = block.querySelectorAll(".project-data .tag");
             let index = 0;
-
             function next() {
                 if (index >= tags.length) return;
                 const text = tags[index].textContent;
-
                 const cls = text.startsWith("$") ? "cmd" : "out";
                 typeProjectLine(body, text, cls, () => {
                     index++;
@@ -1439,10 +1340,96 @@
                 }
             });
         }, { threshold: 0.4 });
-
         document.querySelectorAll(".project-block").forEach(block => {
             projectObserver.observe(block);
         });
+
+        // GLASS SHATTER
+        const glassWrap = document.getElementById("glassTextContainer");
+        let resetTimer = null;
+        let isBroken = false;
+        function breakGlass() {
+            if (isBroken) return;
+            isBroken = true;
+            glassWrap.classList.add("shattered");
+            clearTimeout(resetTimer);
+            resetTimer = setTimeout(() => {
+                glassWrap.classList.remove("shattered");
+                isBroken = false;
+            }, 2000);
+        }
+        glassWrap.addEventListener("mouseenter", breakGlass);
+        glassWrap.addEventListener("touchstart", (e) => { e.preventDefault(); breakGlass(); }, { passive: false });
+
+        const glassImage = document.getElementById("glassImageContainer");
+        let imgBroken = false;
+        glassImage.addEventListener("mouseenter", () => {
+            if (!imgBroken) {
+                glassImage.classList.add("shattered");
+                imgBroken = true;
+            }
+        });
+
+        // ===== SCROLL LOGIC FOR SOCIALS & SCROLL UP =====
+        const floatingSocials = document.getElementById('floatingSocials');
+        const scrollUpBtn = document.querySelector('.scroll-up');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > 100) {
+                floatingSocials.classList.add('hidden');
+                scrollUpBtn.classList.add('show');
+            } else {
+                floatingSocials.classList.remove('hidden');
+                scrollUpBtn.classList.remove('show');
+            }
+        });
+
+        // ===== SOCIAL PREVIEW OVERLAY LOGIC (HOVER) =====
+        const socialLinks = document.querySelectorAll('.floating-socials a');
+        const overlay = document.querySelector('.social-overlay');
+        const overlayIcon = overlay.querySelector('.platform-icon-container');
+        const overlayDesc = overlay.querySelector('p');
+
+        socialLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                const desc = link.getAttribute('data-desc');
+                const svgHTML = link.querySelector('svg').outerHTML;
+                
+                overlayIcon.innerHTML = svgHTML;
+                overlayDesc.textContent = desc;
+                
+                document.body.classList.add('blur-mode');
+                overlay.classList.add('active');
+            });
+
+            link.addEventListener('mouseleave', () => {
+                document.body.classList.remove('blur-mode');
+                overlay.classList.remove('active');
+            });
+        });
+
+        // ===== YOUTUBE CHANNEL SELECTOR (FOOTER) =====
+        const ytOverlay = document.getElementById('ytOverlay');
+
+        function openYtOverlay() {
+            document.body.classList.add('blur-mode');
+            ytOverlay.classList.add('active');
+        }
+
+        function closeYtOverlay() {
+            document.body.classList.remove('blur-mode');
+            ytOverlay.classList.remove('active');
+        }
+
+        // Close on outside click
+        ytOverlay.addEventListener('click', (e) => {
+            if (e.target === ytOverlay) {
+                closeYtOverlay();
+            }
+        });
     </script>
+
 </body>
+
 </html>
